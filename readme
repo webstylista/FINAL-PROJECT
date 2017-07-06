@@ -1,10 +1,9 @@
 Final Project FEWD16
 ---------------------
 
-'Avocado Toast' Easy Home Loan Calculator for Millennials
+Make a LANDING PAGE for a delivery business.
++ SweetBox chocolate delivery
 
-20% of [Median House Price]
-= [Deposit]
-at $22 per brunch (per week?)
-
-You will need to give up ___ Avocado Toast brunches for ___ years
+Landing page needs:
++ JavaScript
+  + Accordion sections for FAQs
