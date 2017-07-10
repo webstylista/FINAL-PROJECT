@@ -1,7 +1,7 @@
 #Final Project FEWD16
 
 ##Make a LANDING PAGE for a delivery business.
-SweetBox chocolate delivery
+[need a name] chocolate delivery
 
 Landing page needs:
 + __JavaScript__
