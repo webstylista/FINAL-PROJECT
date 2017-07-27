@@ -185,17 +185,17 @@ a:hover {
 
 /* article 'window' style */
 
-  #pages article {
-    position: relative;
-    min-width: 20rem;
-    max-width: 100%;
-    margin-bottom: 3.5rem;
-    padding: 3.5rem 2.5rem 1.5rem 2.5rem;
-    background-color: rgba(27, 31, 34, 0.9);
-    border-radius: 4px;
-    opacity: 1;
-    display: none;
-  }
+#pages article {
+  /* position: relative; */
+  margin-bottom: 3.5rem;
+  padding: 3.5rem;
+  min-width: 68rem;
+  padding: 3.5rem 3rem 2.5rem 3rem;
+  background-color: rgba(27, 31, 34, 0.9);
+  border-radius: 4px;
+  opacity: 1;
+  display: none;
+}
 
       #pages article .close {
         color: rgb(202,202,202);
@@ -235,6 +235,57 @@ a:hover {
         max-width: 100%;
         border: 0;
     }
+
+/* article : soaps list */
+
+    article#soaps {
+      text-align: center;
+    }
+
+    .flex-grid {
+      display: flex;
+    }
+
+    .col {
+      flex: 1;
+      padding-right: 1rem;
+      text-align: left;
+    }
+
+    .last {
+      padding-right: 0;
+      text-align: left;
+    }
+
+    article#soaps h3 {
+       text-transform: uppercase;
+       letter-spacing: 0.25rem;
+       text-align: center;
+     }
+
+     small {
+       font-size: 0.75em;
+       letter-spacing: 0.25rem;
+       display: block;
+     }
+
+/* article : stockists map */
+
+    #map_container {
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+    }
+
+    #map_container iframe {
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+    }
+
 
 /*-- contact form --*/
 
@@ -319,7 +370,7 @@ a:hover {
 
 /* MOBILE STYLES */
 
-  @media screen and (max-width: 480px) {
+  @media only screen and (max-width: 500px) {
 
     html {
       font-size: 12pt;
@@ -365,7 +416,12 @@ a:hover {
       }
 
       #pages article {
-        padding: 2rem 1rem 1.5rem;
+        padding: 2rem 1rem 1.5rem 1rem;
+        min-width: 100%;
+      }
+
+      .flex-grid {
+        display: block;
       }
 
   }
