@@ -35,7 +35,14 @@ $(document).ready(function() {
   var slide = 0;
   $('button.left').click(function() {
     $('.slider-container').eq(slide).addClass('move-left');
-    slide = slide + 1;
+
+    if (slide < 6) {
+        slide++;
+    } else {
+        slide = 0;
+        $('.slider-container').eq(slide).removeClass('move-left');
+    }
+
   });
 
 });
