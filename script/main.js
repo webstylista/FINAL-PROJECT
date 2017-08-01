@@ -31,4 +31,11 @@ $(document).ready(function() {
       $('form').submit(thanks);
   });
 
+  //make the slider slide
+  var slide = 0;
+  $('button.left').click(function() {
+    $('.slider-container').eq(slide).addClass('move-left');
+    slide = slide + 1;
+  });
+
 });
