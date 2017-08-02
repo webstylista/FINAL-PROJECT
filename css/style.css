@@ -242,21 +242,6 @@ a:hover {
       text-align: center;
     }
 
-    .flex-grid {
-      display: flex;
-    }
-
-    .col {
-      flex: 1;
-      padding-right: 1rem;
-      text-align: left;
-    }
-
-    .last {
-      padding-right: 0;
-      text-align: left;
-    }
-
     article#soaps h3 {
        text-transform: uppercase;
        letter-spacing: 0.25rem;
@@ -268,6 +253,76 @@ a:hover {
        letter-spacing: 0.25rem;
        display: block;
      }
+
+     /* A Slideshow */
+
+      #soaps .slider-container {
+        width: 100%;
+	      margin: 0 auto;
+      }
+
+      #soaps .my-slider {
+        width: 100%;
+      	height: 82vh;
+      	position: relative;
+      	overflow: hidden;
+      	padding: 0;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+
+        .slide {
+        	position: absolute;
+        	bottom: 0;
+        	left: 0;
+        	padding: 0;
+        	width: 100%;
+        }
+
+        .slider-container #prev, .slider-container #next {
+        	cursor: pointer;
+        	z-index: 3;
+        	background: rgb(0,0,0);
+        	height: 50px;
+        	width: 50px;
+        	display: inline-block;
+        	position: relative;
+        	top: 100px;
+        	margin: 0;
+        	padding: 0;
+        }
+
+        .slider-container #next {
+        	float: right;
+        	right: -2px;
+        }
+
+        .slider-container #prev {
+        	float: left;
+        	left: 0;
+        }
+
+        .arrow-right {
+        	width: 0;
+        	height: 0;
+        	border-top: 15px solid transparent;
+        	border-bottom: 15px solid transparent;
+        	border-left: 15px solid rgb(255,255,255);
+        	position:relative;
+        	top: 20%;
+        	right: -40%;
+        }
+
+        .arrow-left {
+        	width: 0;
+        	height: 0;
+        	border-top: 15px solid transparent;
+        	border-bottom: 15px solid transparent;
+        	border-right: 15px solid rgb(255,255,255);
+        	position: relative;
+        	top: 20%;
+        	left: 30%;
+        }
 
 /* article : stockists map */
 
@@ -370,7 +425,7 @@ a:hover {
 
 /* MOBILE STYLES */
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 480px) {
 
     html {
       font-size: 12pt;

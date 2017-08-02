@@ -1,10 +1,13 @@
 $(document).ready(function() {
 
+  var slideSpeed = 800;
+  var fadeSpeed = 600;
+
   //open modals
   function openModal(event) {
     var formId = $(event.target).attr('data-form');
-    $('#' + formId).slideDown(800);
-    $('#header').fadeOut(600);
+    $('#' + formId).slideDown(slideSpeed);
+    $('#header').fadeOut(fadeSpeed);
     $('footer').hide();
   }
 
@@ -13,8 +16,8 @@ $(document).ready(function() {
 
   //close modals
   $('.close').click(function() {
-    $(this).parent().slideUp(800);
-    $('#header').fadeIn(600);
+    $(this).parent().slideUp(slideSpeed);
+    $('#header').fadeIn(fadeSpeed);
     $('footer').show();
   });
 
@@ -23,7 +26,7 @@ $(document).ready(function() {
 
       var thanks = function(event) {
         event.preventDefault();
-        $('#enquire h2').text("Thank you for your enquiry.")
+        $('#enquire h2').text('Thank you for your enquiry.')
         $('form').hide();
         $('#enquire p').hide();
       }
@@ -31,18 +34,5 @@ $(document).ready(function() {
       $('form').submit(thanks);
   });
 
-  //make the slider slide
-  var slide = 0;
-  $('button.left').click(function() {
-    $('.slider-container').eq(slide).addClass('move-left');
-
-    if (slide < 6) {
-        slide++;
-    } else {
-        slide = 0;
-        $('.slider-container').eq(slide).removeClass('move-left');
-    }
-
-  });
 
 });

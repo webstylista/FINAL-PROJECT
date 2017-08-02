@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
   <script type="text/javascript" src="script/main.js"></script>
+  <script type="text/javascript" src="script/slider.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Rue Papier Soap Co</title>
 </head>
@@ -51,32 +52,45 @@
           <span class="close">&times;</span>
           <h2>Small batch French milled goodness for your skin</h2>
           <p>Some of our all-natural handmade soap flavours:</p>
-          <div class="flex-grid">
-            <div class="col">
-              <h3>Green Lady: <small>Hydrating Avocado</small></h3>
-              <p>Ingredients: Sodium Bicarbonate Citric Acid Fresh Avocado (Persea gratissima) Organic Extra Virgin Olive Oil (Olea europaea) Lemongrass Oil (Cymbopogon Citratus Leaf Oil) Bergamot Oil (Citrus Aurantium bergamia) Rosewood Oil (Aniba rosaeordora) (Aniba Rosaeodora (Rosewood) Wood Oil) *Citral *Geraniol *Limonene *Linalool Fragrance Gardenia Extract (Gardenia jasminoides) Green Lustre (Mica, Titanium Dioxide, Yellow 5, Blue 1 Lake) *Occurs naturally in essential oils</p>
-            </div>
-            <div class="col">
-              <h3>Dark Hot Cocoa: <small>Rejuvenating Chocolate</small></h3>
-              <p>Ingredients: Rhassoul Mud (Moroccan Lava Clay) Linseed Infusion (Linum usitatissimum) Glycerine Talc Cocoa Powder (Theobroma cacao) Cocoa Butter (Theobroma cacao) Fresh Mint (Mentha Piperita) (Mentha Piperita (Peppermint) Leaf) Sandalwood Oil (Santalum austro-caledonicum vieill) Vanilla Absolute (Vanilla planifolia) Spearmint Oil (Mentha spicata) Peppermint Oil (Mentha piperita) *Limonene Fragrance *Occurs naturally in essential oils</p>
-            </div>
-            <div class="col last">
-              <h3>Toffee Apple: <small>Tart Cinnamon Apple</small></h3>
-              <p>Ingredients: Sodium Bicarbonate Citric Acid Popping Candy (Isomalt, Lycasin, Carbon Dioxide) Cream of Tartar (Potassium Bitartrate) Fragrance Cinnamon Leaf Oil (Cinnamomum Zeylanicum) Petitgrain Oil (Citrus Aurantium amara) Ylang Ylang Oil (Cananga odorata) Sodium Laureth Sulfate Lauryl Betaine Oak Moss Extract (Evernia Prunastri) *Citral *Cinnamal Coumarin *Geraniol *Limonene *Linalool Blue 1 Yellow 10 *Occurs naturally in essential oils</p>
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <h3>Forbidden Fruit: <small>Sweet Wild Orange</small></h3>
-              <p>Ingredients: Sodium Bicarbonate Cream of Tartar (Potassium Bitartrate) Sodium Laureth Sulfate Radiant Gold Lustre (Synthetic Fluorphlogopite, Titanium Dioxide, Iron Oxides) Lauryl Betaine Corn Starch (Zea Mays (Corn) Starch) Sweet Wild Orange Oil (Citrus sinensis) Fragrance Lemon Oil (Citrus limonum) Tangerine Oil (Citrus reticulata) *Citral *Citronellol *Geraniol Hydroxycitronellal *Limonene *Linalool *Occurs naturally in essential oils</p>
-            </div>
-            <div class="col">
-              <h3>Buzzy Bee: <small>Soothing Oatmeal Honey</small></h3>
-              <p>Ingredients: Kaolin Talc Fresh Organic Lime Juice (Citrus aurantifolia) Sage (Salvia Officinalis (Sage) Leaf Extract) Rosemary and Juniperberry Infusion (Salvia officinalis, Rosma ((Salvia officinalis, Rosmarinus officinalis, Juniperus communis)) Honey (Honey/Miel)  Ground Almond Shells (Prunus dulcis) Almond Oil (Prunus dulcis) *Benzyl Salicylate *Eugenol *Geraniol *Benzyl Benzoate *Linalool Fragrance *Occurs naturally in essential oils</p>
-            </div>
-            <div class="col last">
-              <h3>Mermaid Kiss: <small>Exfoliating Sea Salt</small></h3>
-              <p>Ingredients: Fine Sea Salt (Sodium Chloride) Hand Harvested Sea Salt (Sodium Chloride) Organic Silken Tofu (Hydrolysed Soy Protein) Sodium Cocoamphoacetate Fresh Organic Lime Extracted in Vodka (Citrus aurantifolia) Mango Butter (Mangifera indica) Extra Virgin Coconut Oil (Cocos nucifera) Avocado Butter (Persea Gratissima) Lime Oil (Citrus aurantifolia) Seaweed Absolute (Fucus vesiculosus) *Citral *Limonene Linalool Fragrance Blue 1 *Occurs naturally in essential oils</p>
+
+          <div class="slider-container">
+            <div id="next" alt="Next" title="Next">
+      				<div class="arrow-right"></div>
+      			</div>
+      			<div id="prev" alt="Prev" title="Prev">
+      				<div class="arrow-left"></div>
+      			</div>
+            <div class="my-slider">
+              <div class="slide">
+                <h3>Green Lady: <small>Hydrating Avocado</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Sodium Bicarbonate Citric Acid Fresh Avocado (Persea gratissima) Organic Extra Virgin Olive Oil (Olea europaea) Lemongrass Oil (Cymbopogon Citratus Leaf Oil) Bergamot Oil (Citrus Aurantium bergamia) Rosewood Oil (Aniba rosaeordora) (Aniba Rosaeodora (Rosewood) Wood Oil) *Citral *Geraniol *Limonene *Linalool Fragrance Gardenia Extract (Gardenia jasminoides) Green Lustre (Mica, Titanium Dioxide, Yellow 5, Blue 1 Lake) *Occurs naturally in essential oils</p>
+              </div>
+              <div class="slide">
+                <h3>Dark Hot Cocoa: <small>Rejuvenating Chocolate</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Rhassoul Mud (Moroccan Lava Clay) Linseed Infusion (Linum usitatissimum) Glycerine Talc Cocoa Powder (Theobroma cacao) Cocoa Butter (Theobroma cacao) Fresh Mint (Mentha Piperita) (Mentha Piperita (Peppermint) Leaf) Sandalwood Oil (Santalum austro-caledonicum vieill) Vanilla Absolute (Vanilla planifolia) Spearmint Oil (Mentha spicata) Peppermint Oil (Mentha piperita) *Limonene Fragrance *Occurs naturally in essential oils</p>
+              </div>
+              <div class="slide">
+                <h3>Toffee Apple: <small>Tart Cinnamon Apple</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Sodium Bicarbonate Citric Acid Popping Candy (Isomalt, Lycasin, Carbon Dioxide) Cream of Tartar (Potassium Bitartrate) Fragrance Cinnamon Leaf Oil (Cinnamomum Zeylanicum) Petitgrain Oil (Citrus Aurantium amara) Ylang Ylang Oil (Cananga odorata) Sodium Laureth Sulfate Lauryl Betaine Oak Moss Extract (Evernia Prunastri) *Citral *Cinnamal Coumarin *Geraniol *Limonene *Linalool Blue 1 Yellow 10 *Occurs naturally in essential oils</p>
+              </div>
+              <div class="slide">
+                <h3>Forbidden Fruit: <small>Sweet Wild Orange</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Sodium Bicarbonate Cream of Tartar (Potassium Bitartrate) Sodium Laureth Sulfate Radiant Gold Lustre (Synthetic Fluorphlogopite, Titanium Dioxide, Iron Oxides) Lauryl Betaine Corn Starch (Zea Mays (Corn) Starch) Sweet Wild Orange Oil (Citrus sinensis) Fragrance Lemon Oil (Citrus limonum) Tangerine Oil (Citrus reticulata) *Citral *Citronellol *Geraniol Hydroxycitronellal *Limonene *Linalool *Occurs naturally in essential oils</p>
+              </div>
+              <div class="slide">
+                <h3>Buzzy Bee: <small>Soothing Oatmeal Honey</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Kaolin Talc Fresh Organic Lime Juice (Citrus aurantifolia) Sage (Salvia Officinalis (Sage) Leaf Extract) Rosemary and Juniperberry Infusion (Salvia officinalis, Rosma ((Salvia officinalis, Rosmarinus officinalis, Juniperus communis)) Honey (Honey/Miel)  Ground Almond Shells (Prunus dulcis) Almond Oil (Prunus dulcis) *Benzyl Salicylate *Eugenol *Geraniol *Benzyl Benzoate *Linalool Fragrance *Occurs naturally in essential oils</p>
+              </div>
+              <div class="slide">
+                <h3>Mermaid Kiss: <small>Exfoliating Sea Salt</small></h3>
+                <img src="http://placehold.it/600x300">
+                <p>Ingredients: Fine Sea Salt (Sodium Chloride) Hand Harvested Sea Salt (Sodium Chloride) Organic Silken Tofu (Hydrolysed Soy Protein) Sodium Cocoamphoacetate Fresh Organic Lime Extracted in Vodka (Citrus aurantifolia) Mango Butter (Mangifera indica) Extra Virgin Coconut Oil (Cocos nucifera) Avocado Butter (Persea Gratissima) Lime Oil (Citrus aurantifolia) Seaweed Absolute (Fucus vesiculosus) *Citral *Limonene Linalool Fragrance Blue 1 *Occurs naturally in essential oils</p>
+              </div>
             </div>
           </div>
         </article>
