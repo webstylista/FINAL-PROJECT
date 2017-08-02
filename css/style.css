@@ -76,12 +76,10 @@ a:hover {
   }
 
 /* logo typography */
-    .logo {
-      font-family: georgia, serif;
-      font-size: 1em;
-      color: rgb(207,181,59);
-      text-transform: lowercase;
-      letter-spacing: normal;
+    .logo img {
+      border-radius: 50%;
+      height: 6.4rem;
+      width: 6.4rem;
     }
 
   #header .content {
