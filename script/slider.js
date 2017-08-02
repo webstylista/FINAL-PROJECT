@@ -8,7 +8,7 @@ $(document).ready(function() {
   $('.slide').first().addClass('active');
 
   // hide all slides
-  $('.slide').hide;
+  $('.slide').hide();
 
   // but show only active class slide
   $('.active').show();
